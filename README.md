@@ -39,13 +39,7 @@ Welcome to the AI Music Player repository! This is a full-stack progressive web 
 
 ## Screenshots 📸
 
-![Screenshot 1](https://github.com/powerstone666/MelodyMind/blob/main/Screenshot%20(172).png)
-![Screenshot 2](https://github.com/powerstone666/MelodyMind/blob/main/Screenshot%20(173).png)
+![image](https://github.com/user-attachments/assets/13c56be1-80af-4e93-915a-15331bd4b0ae)
 
-## Contributing 🤝
+![image](https://github.com/user-attachments/assets/2054d057-8bce-455a-b125-3996402ed250)
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
