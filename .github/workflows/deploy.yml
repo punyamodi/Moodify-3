@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Use the Node.js version your project needs
+          node-version: '14'  # You can update this to the required version
 
       - name: Install dependencies
         run: npm install
@@ -44,5 +44,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Specify your build directory
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use the built-in GitHub Token
+          publish_dir: ./dist  # Default for Vite, update if necessary
