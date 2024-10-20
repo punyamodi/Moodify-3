@@ -1,9 +1,10 @@
+# deploy.yml
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Use the branch where your code is pushed
+      - main
 
 jobs:
   build_and_deploy:
@@ -24,16 +25,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # You can update this to the version your project needs
+          node-version: '14'
 
       - name: Install dependencies
         run: npm install
 
       - name: Build project
-        run: npm run build  # Production build for Vite
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.G_TOKEN }}  # GitHub Actions token
-          publish_dir: ./dist  # Vite outputs production files to the 'dist' directory
+          github_token: ${{ secrets.G_TOKEN }}  # Use the default GitHub token
+          publish_dir: ./dist

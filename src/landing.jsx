@@ -31,9 +31,10 @@ function Landing() {
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/discover" element={<Discover/>}></Route>
-          <Route path="/albums" element={<AlbumFull/>}></Route>
-          <Route path="/innerAlbum" element={<Inneralbum/>}></Route>
-          <Route path="albums/innerAlbum" element={<Inneralbum/>}></Route>
+          <Route path="/albums" element={<AlbumFull />} />
+          <Route path="/innerAlbum" element={<Inneralbum />} />
+          <Route path="albums/innerAlbum" element={<Inneralbum />} />
+
           {isAboveMedium &&(
           <Route path="/artist" element={<ArtistPage/>}></Route>
           )}

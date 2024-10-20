@@ -40,13 +40,6 @@ function Sidebar() {
               </div>
             </Link>
 
-            <Link to="/albums">
-              <div className={`flex items-center p-2 mb-2 ${selected === "/albums" ? selectedStyle : "hover:text-white"} transition duration-200`}>
-                <FaCompactDisc className="mr-4 h-8 w-8" /> {/* Icon size increased */}
-                <span>Albums</span>
-              </div>
-            </Link>
-
             <Link to="/artist">
               <div className={`flex items-center p-2 mb-2 ${selected === "/artist" ? selectedStyle : "hover:text-white"} transition duration-200`}>
                 <FaUser className="mr-4 h-8 w-8" /> {/* Icon size increased */}
